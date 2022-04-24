@@ -1,0 +1,32 @@
+CREATE DATABASE `bd_biblio` CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_general_ci';
+
+CREATE TABLE libros
+
+(
+id int (11) AUTO_INCREMENT ,
+
+isbn varchar (50),
+
+titulo varchar (150),
+
+categoria varchar(150),
+
+CONSTRAINT id_pk PRIMARY  KEY(ID)
+);
+
+ 
+
+SELECT * FROM   LIBROS;
+ 
+
+
+
+
+INSERT INTO libros(isbn,titulo,categoria) VALUES ('1001','Las mil y una noches','Drama');
+
+INSERT INTO libros(isbn,titulo,categoria) VALUES ('1002','El principito','Cuento');
+
+INSERT INTO libros(isbn,titulo,categoria) VALUES ('1003','Don quijote de la mancha','Novela');
+
+SELECT * FROM   LIBROS;
+ 
